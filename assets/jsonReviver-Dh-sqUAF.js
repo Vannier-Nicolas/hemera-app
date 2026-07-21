@@ -1,0 +1,1 @@
+const n=new Set(["createdAt","updatedAt","requestedAt","respondedAt","assignedAt","checkIn","checkOut","scheduledFor","acknowledgedAt","completedAt","recordedAt"]);function d(e,t){if(typeof t=="string"&&n.has(e)){const r=new Date(t);if(!Number.isNaN(r.getTime()))return r}return t}function s(e){return JSON.parse(e,d)}export{s as parseJsonWithDates};
